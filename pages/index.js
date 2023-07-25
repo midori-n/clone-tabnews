@@ -1,9 +1,21 @@
 function Home() {
   return (
-    <center>
-      <h2>Vou fazer essa tela desaparecer!</h2>
-      <h1>Aperte ALT+F4 e veja a mágica acontecer (◔ ౪◔)⊃━☆ﾟ.*・</h1>
-    </center>
+    <div className="em_construcao">
+      <title>TabNovel</title>
+      <header className="em_breve">
+        <h1>tabnovel.com.br</h1>
+        <h2>Em breve...</h2>
+        <h3>...um universo literário em expansão</h3>
+      </header>
+      <hr className="line" />
+      <article className="inspiracional">
+        <p className="citacao">
+          "Podem existir sonhos que não se realizam, mas não existem realizações
+          sem antes sonhar."
+        </p>
+        <p className="assinatura">- Leona Hagebak</p>
+      </article>
+    </div>
   );
 }
 

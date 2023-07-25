@@ -1,0 +1,107 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:wght@600&display=swap");
+
+/* root & base mobile */
+:root {
+  --cor-fundo: linear-gradient(
+    to bottom right,
+    rgb(50, 74, 97),
+    rgb(136, 184, 185)
+  );
+  --cor-primaria: white;
+  --cor-secundaria: rgb(182, 208, 226);
+  --fonte-titulo: "Playfair Display", serif;
+  --fonte-sub: "Baskervville", serif;
+}
+
+body {
+  background-image: var(--cor-fundo);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.em_construcao {
+  color: var(--cor-primaria);
+  display: block;
+  font-family: var(--fonte-titulo);
+  height: 100vh;
+  width: 100%;
+}
+
+.em_breve {
+  font-size: 2.2em;
+  font-weight: 600;
+  text-align: left;
+  padding: 1em;
+}
+
+.em_breve h1,
+h2,
+h3 {
+  padding: 0.7em;
+}
+
+.em_breve h1 {
+  color: var(--cor-secundaria);
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.em_breve h2 {
+  padding-bottom: 0;
+}
+
+.line {
+  background-color: var(--cor-secundaria);
+  border: none;
+  height: 1px;
+  margin: auto;
+  width: 80vw;
+}
+
+.inspiracional {
+  font-weight: 400;
+  font-family: var(--fonte-sub);
+  padding: 3em;
+}
+.citacao {
+  font-size: 1.6em;
+  font-style: italic;
+  text-align: center;
+}
+.assinatura {
+  font-size: 1.2em;
+  text-align: right;
+  margin-top: 2em;
+}
+
+/* 916px + */
+@media screen and (min-width: 916px) {
+  .em_breve {
+    font-size: 3em;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+  .em_breve h1 {
+    margin-bottom: 1em;
+  }
+  .em_breve h2 {
+    padding-bottom: 0;
+  }
+
+  .em_breve h3 {
+    text-align: right;
+  }
+
+  .inspiracional {
+    padding-top: 5em;
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+
+  .assinatura {
+    margin-top: 2em;
+  }
+}
